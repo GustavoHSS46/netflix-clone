@@ -278,7 +278,9 @@
 }
 
 
-
+.Burguer-menu {
+    display: none;
+}
 
 
 .slide-bottom{animation:slide-bottom .5s cubic-bezier(.25,.46,.45,.94) both}
@@ -292,10 +294,17 @@
 
 
 @media screen and (max-width: 550px) {
+
+    .netflix__navbar {
+        height: 50vh;
+    }
+
     .navbar {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+
+        padding: 0 2rem;
     }
 
     .netflix__navbar-logo {
@@ -304,5 +313,83 @@
 
     .netflix__navbar-links {
         display: none;
+    }
+
+    .Burguer-menu {
+        display: block;
+        color: white;
+        width: fit-content;
+    }
+
+    .Burguer-menu {
+        width: fit-content;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .burguer {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    
+        overflow: hidden;
+    
+        width: 100vw;
+        padding: 0.5rem;
+    
+        border-radius: 15px;
+        
+        background-color: rgb(53, 53, 53);
+    }
+
+    .icon-right {
+        margin-left: auto;
+    }
+    
+    .icon-button {
+        margin-right: auto;
+    }
+    
+    
+    .menu_item {
+        height: 50px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;
+    }
+    
+    .menu_item {
+        height: 50px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    
+    .menu_item:hover {
+        background-color: rgb(54, 54, 54);
+    }
+    
+    .burguer .icon-right {
+        color: white;
+        margin-left: auto;
+    }
+    
+    .burguer .icon-button {
+        color: white;
+        margin-right: auto;
+    }
+    
+    .burguer h1 {
+        text-align: center;
+        
+        font-size: 18px;
     }
 }

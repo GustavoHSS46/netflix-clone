@@ -13,6 +13,8 @@
 
     min-height: 15rem;
     min-width: 11rem;
+
+    transition: 550ms;
 }
 
 .card__roll h1 {
@@ -20,8 +22,6 @@
 
     font-family: var(--font-family);
     color: black;
-
-    bottom: 1rem;
 }
 
 .card__roll img {
@@ -40,5 +40,6 @@
 
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-around;
 }

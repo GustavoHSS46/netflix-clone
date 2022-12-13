@@ -202,7 +202,7 @@
     }
 
     .netflix__principal-sinopse {
-        top: 20rem;
+        top: 22.9rem;
         height: 10%;
         width: 100%;
 
@@ -225,12 +225,22 @@
     }
 
     .buttons{
-        height: 70%;
-        width: 60%;
+        height: 100%;
+        width: 80%;
     }
 
     .netflix__principal-bg img {
         height: 100%;
         width: 100%;
+    }
+
+    .play {  
+        width: 35%;
+        height: 90%;
+    }
+    
+    .add {
+        width: 35%;
+        height: 90%;
     }
 }

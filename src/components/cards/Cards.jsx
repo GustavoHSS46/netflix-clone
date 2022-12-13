@@ -9,7 +9,7 @@ const Cards = ({img, title}) => {
     <div className="card__roll">
       <img src={img} alt="" />
       <div className="card__roll-lower">
-        <BiPlay size={32}/>
+        <BiPlay size={26}/>
         <h1>{title}</h1>
         <AiOutlinePlus size={22}/>
       </div>
