@@ -19,3 +19,14 @@
 .netflix__content-row {
     margin-top: 4rem;
 }
+
+@media screen and (max-width: 550px) {
+    .netflix__content h1 {
+        color: white;
+        font-size: 22px;
+    }
+
+    .netflix__content-row {
+        margin-top: 2rem;
+    }
+} 

@@ -6,7 +6,7 @@ import { Navbar, Principal, Content, Footer } from './containers'
 
 const App = () => {
   return (
-    <div>
+    <div className='App'>
       <Navbar />
       <Principal/>
       <Content />

@@ -9,14 +9,36 @@
     height: 12rem;
     width: 100vw;
 
+
     display: flex;
+    justify-content: center;
     flex-direction: row;
     overflow: hidden;
+
+
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 35%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 35%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 35%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 35%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 35%);    
 }
 
 .navbar {
+
     height: 5rem;
-    width: 100vw;
+    width: 90vw;
 
     display: flex;
     flex-direction: row;
@@ -165,7 +187,7 @@
 
 .dropdown {
     position: absolute;
-    right: 1rem;
+    right: 4rem;
 
     overflow: hidden;
 
@@ -280,6 +302,13 @@
 
 .Burguer-menu {
     display: none;
+}
+
+
+
+.-hover:hover {
+    cursor: pointer;
+    opacity: 60%;
 }
 
 

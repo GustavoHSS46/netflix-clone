@@ -43,3 +43,7 @@
     flex-direction: row;
     justify-content: space-around;
 }
+
+.bigger {
+    background-color: red;
+}

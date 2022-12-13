@@ -26,7 +26,7 @@ const Navbar = () => {
             <div className="netflix__navbar-links_icons">
               <FaSearch size={18} className='hover'/>
               <div className="netflix__navbar-links_icons-mylist ">
-              <ListItem>
+              <ListItem >
                 <ListMenu/>
               </ListItem>
               </div>
@@ -52,14 +52,14 @@ function NavItem(props) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="account-menu" onClick={() => setOpen(!open)} >
-      <div className="account-image">
+    <div className="account-menu " onClick={() => setOpen(!open)} >
+      <div className="account-image -hover">
         <img src="https://i.imgflip.com/4uhis6.jpg" alt="" />
       </div>
-      <div className="account-name">
+      <div className="account-name -hover">
         <h1>Gustavo H.</h1>
       </div>
-      <RiArrowDropDownFill size={30} />
+      <RiArrowDropDownFill size={30} className="-hover"/>
       {open && props.children}
     </div>
 
@@ -96,13 +96,15 @@ function DropdownMenu() {
   )
 }
 
+
+
 function ListItem(props) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="list-menu" onClick={() => setOpen(!open)} >
-      <FaHeart size={18}/> 
-      <h1> My List</h1>
+    <div className="list-menu list-hover" onClick={() => setOpen(!open)} >
+      <FaHeart size={18} className="-hover"/> 
+      <h1 className="-hover"> My List</h1>
       {open && props.children}
     </div>
 
@@ -112,17 +114,17 @@ function ListItem(props) {
 
 function ListMenu() {
   
-function ListmenuItem(props) {
-  return (
-    <div className="menu_item">
-      <span className='icon-button'>{props.leftIcon}</span>
+  function ListmenuItem(props) {
+    return (
+      <div className="menu_item">
+        <span className='icon-button'>{props.leftIcon}</span>
 
-      {props.children}
+        {props.children}
 
-      <span className='icon-right'>{props.rightIcon}</span>
-    </div>
-  )
-}
+        <span className='icon-right'>{props.rightIcon}</span>
+      </div>
+    )
+  }
 
   return (
     <div className='list slide-bottom'>
@@ -133,6 +135,8 @@ function ListmenuItem(props) {
     </div>
   )
 }
+
+
 
 function BurguerMenuItem(props) {
   const [open, setOpen] = useState(false);
