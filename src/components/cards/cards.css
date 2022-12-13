@@ -1,0 +1,44 @@
+.card__roll {
+    margin: 1rem;
+
+    border-radius: 15px;
+    border: 2px solid black;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    overflow: hidden;
+
+    min-height: 15rem;
+    min-width: 11rem;
+}
+
+.card__roll h1 {
+    font-size: 16px;
+
+    font-family: var(--font-family);
+    color: black;
+
+    bottom: 1rem;
+}
+
+.card__roll img {
+    height: 80%;
+    width: 100%;
+}
+
+.card__roll:hover {
+    border: 2px solid white;
+    background-color: white;
+}
+
+.card__roll-lower {
+    height: 20%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

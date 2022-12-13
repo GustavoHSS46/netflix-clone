@@ -1,0 +1,17 @@
+.netflix__content {
+    background-color: var(--background);
+    height: 100vh;
+    width: 100vw;
+
+    padding: 2rem;
+}
+
+.netflix__content-recomendations {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+
+.netflix__content h1 {
+    color: white;
+}
